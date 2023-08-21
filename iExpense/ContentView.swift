@@ -87,7 +87,6 @@ struct ContentView: View {
         @Environment(\.dismiss) var dismissView
         @Binding var selectedCurrency: String
         
-        //double entries for currency wheel please investigate
         let availableCurrencies = Locale.commonISOCurrencyCodes.compactMap({$0}).sorted()
         
         var body: some View {
